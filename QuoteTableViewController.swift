@@ -11,16 +11,16 @@ class QuoteTableViewController: UITableViewController {
     
     
     var quotes = [
-    "I love you to the moon & back",
+    "Show love to everyone regardless of status, stature, orientation, or belief",
         "There is a friend that is closer then a brother",
-        "Do not shake hands in surety, let your yes be yes, and your no be no",
+        "Do not shake hands in surety, instead let your yes be yes & let your no be no",
         "Precision based articulation",
         "Offer help to those who can not help themselves",
-        "be a voice to the voiceless",
-        "control your tounge as a captain would the wheel of a large vessel for it is capable of great destruction",
-        "never forget the ones who showed Love when there was nothing to expect in return",
-        "He who is the least among you, treat in the same dignity as a rich man",
-        "In the end knowledge will fade away, looks will wither, the hopes for your life will have passed you by but Love will remain"
+        "Be a voice to the voiceless",
+        "Control your tounge as a captain would the wheel of a large vessel for as is such so the tongue is capable of great destruction",
+        "Forget not the one who shows Love when there was nothing to expect in return",
+        "He who is the least among you, treat in the same dignity as you would a rich man",
+        "In the end knowledge will fade away, looks will wither, & the hopes for your youth will have passed you by but Love will remain"
     ]
 
     override func viewDidLoad() {
@@ -105,7 +105,7 @@ class QuoteTableViewController: UITableViewController {
         if let quoteViewController = segue.destination as?
             QuoteDetailViewController{
             if let selectedQuote = sender as? String {
-                quoteViewController.title = selectedQuote
+                quoteViewController.quote = selectedQuote
             }
         }
     }

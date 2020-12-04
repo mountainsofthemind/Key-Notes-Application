@@ -8,10 +8,13 @@
 import UIKit
 
 class QuoteDetailViewController: UIViewController {
+    
+    var quote=""
 
+    @IBOutlet weak var quoteLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        quoteLabel.text = quote
         // Do any additional setup after loading the view.
     }
     
